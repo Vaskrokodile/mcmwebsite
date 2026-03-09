@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Mineconsulting - Transform Your Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --consulting-bg: #050b14;
+            --consulting-glow: radial-gradient(circle at center, rgba(0, 188, 212, 0.15) 0%, transparent 70%);
+        }
+
+        .consulting-body {
+            background-color: var(--consulting-bg);
+            background-image: var(--consulting-glow);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .consulting-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .consulting-logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .consulting-logo span {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .consulting-nav-box {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            padding: 0.5rem 2rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .consulting-nav-box a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .consulting-nav-box a:hover {
+            color: #fff;
+        }
+
+        .consulting-nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .lang-selector {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #fff;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .btn-book {
+            background: #fff;
+            color: #000;
+            padding: 0.6rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .btn-book:hover {
+            transform: scale(1.05);
+        }
+
+        .consulting-hero {
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .consulting-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        .consulting-hero h1 span {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .consulting-hero p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.15rem;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto 3rem;
+        }
+
+        .consulting-hero-ctas {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 6rem;
+        }
+
+        .btn-consulting-dark {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-consulting-light {
+            background: #fff;
+            color: #000;
+            padding: 0.8rem 2rem;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .partners-section {
+            padding-bottom: 6rem;
+        }
+
+        .partners-title {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 3rem;
+            text-transform: none;
+            letter-spacing: 0.02em;
+        }
+
+        .partners-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            opacity: 0.7;
+        }
+
+        .partner-logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -0.02em;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .consulting-navbar {
+                padding: 1.5rem 2rem;
+            }
+
+            .consulting-nav-box {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="consulting-body">
+
+    <!-- ═══ NAVBAR ═══ -->
+    <header class="consulting-navbar">
+        <a href="index.html" class="consulting-logo">HEXACO<span>RE</span></a>
+
+        <nav class="consulting-nav-box">
+            <a href="#">Service</a>
+            <a href="#">Work</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+        </nav>
+
+        <div class="consulting-nav-right">
+            <div class="lang-selector">
+                <span>🇬🇧 EN</span>
+                <span style="font-size: 0.7rem; opacity: 0.6;">▼</span>
+            </div>
+            <a href="https://discord.gg/minecom" class="btn-book">Book a Call</a>
+        </div>
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <main class="consulting-hero">
+        <h1>Transform Your <span>Business</span> <br> with Future-Ready <span>Technology</span></h1>
+
+        <p>From strategy to execution, we’re your partners in digital transformation.</p>
+
+        <div class="consulting-hero-ctas">
+            <a href="#" class="btn-consulting-dark">Get Started</a>
+            <a href="https://discord.gg/minecom" class="btn-consulting-light">Book a Call</a>
+        </div>
+
+        <!-- ═══ PARTNERS ═══ -->
+        <div class="partners-section">
+            <div class="partners-title">Trusted by 200+ brands</div>
+            <div class="partners-grid">
+                <span class="partner-logo">AMD</span>
+                <span class="partner-logo">MITSUBISHI</span>
+                <span class="partner-logo">PSEG</span>
+                <span class="partner-logo">Bank of China</span>
+                <span class="partner-logo">Hormel</span>
+                <span class="partner-logo">Rockwell Automation</span>
+                <span class="partner-logo">Marr</span>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
