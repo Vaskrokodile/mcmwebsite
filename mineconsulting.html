@@ -245,106 +245,218 @@
             </div>
 
             <div class="expertise-grid"
-                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1200px; margin: 0 auto;">
-                <!-- Card 1 -->
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; max-width: 1300px; margin: 0 auto;">
+                <!-- Card 1: Cloud Solutions -->
                 <div class="expertise-card"
-                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 2.5rem; text-align: left; backdrop-filter: blur(10px);">
-                    <div class="btn-purple"
-                        style="width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.25rem; cursor: default; pointer-events: none;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                    <div
+                        style="flex-shrink: 0; width: 48px; height: 48px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <path
-                                d="M17.5 19a3.5 3.5 0 1 1 0-7c.2 0 .4 0 .6.1a6.6 6.6 0 1 0-8.2 4.1c.1 0 .2 0 .3-.1l.1 3">
+                                d="M17.5 19a3.5 3.5 0 0 1 0-7c.2 0 .4 0 .6.1a6.6 6.6 0 1 0-8.2 4.1c.1 0 .2 0 .3-.1l.1 3">
                             </path>
                             <path d="M11 19h1"></path>
                         </svg>
                     </div>
-                    <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 1rem;">Cloud Solutions</h3>
-                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.6; font-size: 0.95rem;">Migrate with
-                        confidence. We design secure, scalable cloud infrastructures that reduce downtime and
-                        operational costs.</p>
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Cloud Solutions</h3>
+                        <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">Migrate with
+                            confidence. We design secure, scalable cloud infrastructures that reduce downtime and
+                            operational costs.</p>
+                    </div>
                 </div>
-                <!-- Card 2 -->
+                <!-- Card 2: Short form content -->
                 <div class="expertise-card"
-                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 2.5rem; text-align: left; backdrop-filter: blur(10px);">
-                    <div class="btn-purple"
-                        style="width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.25rem; cursor: default; pointer-events: none;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                    <div
+                        style="flex-shrink: 0; width: 48px; height: 48px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25a29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Short form content</h3>
+                        <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">Learn all the
+                            secrets of short form content, and start generating hundreds of thousands of views.</p>
+                    </div>
+                </div>
+                <!-- Card 3: Data & AI Consulting -->
+                <div class="expertise-card"
+                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                    <div
+                        style="flex-shrink: 0; width: 48px; height: 48px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="20" x2="18" y2="10"></line>
                             <line x1="12" y1="20" x2="12" y2="4"></line>
                             <line x1="6" y1="20" x2="6" y2="14"></line>
                         </svg>
                     </div>
-                    <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 1rem;">Data & AI Consulting</h3>
-                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.6; font-size: 0.95rem;">Unlock the full
-                        value of your data with predictive analytics, automation, and AI-driven solutions tailored to
-                        your industry.</p>
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Data & AI Consulting</h3>
+                        <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">Unlock the
+                            full value of your data with predictive analytics, automation, and AI-driven solutions
+                            tailored to your industry.</p>
+                    </div>
                 </div>
-                <!-- Card 3 -->
+                <!-- Card 4: Discord growth -->
                 <div class="expertise-card"
-                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 2.5rem; text-align: left; backdrop-filter: blur(10px);">
-                    <div class="btn-purple"
-                        style="width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.25rem; cursor: default; pointer-events: none;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                    <div
+                        style="flex-shrink: 0; width: 48px; height: 48px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Discord growth</h3>
+                        <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">Learn how to
+                            grow your discord in an impactful way.</p>
+                    </div>
+                </div>
+                <!-- Card 5: Cybersecurity -->
+                <div class="expertise-card"
+                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                    <div
+                        style="flex-shrink: 0; width: 48px; height: 48px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                     </div>
-                    <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 1rem;">Cybersecurity</h3>
-                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.6; font-size: 0.95rem;">Stay protected
-                        with advanced cybersecurity strategies, 24/7 monitoring, and compliance with global regulations.
-                    </p>
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Cybersecurity</h3>
+                        <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">Stay protected
+                            with advanced cybersecurity strategies, 24/7 monitoring, and compliance with global
+                            regulations.</p>
+                    </div>
                 </div>
-                <!-- Card 4 -->
+                <!-- Card 6: Monetization -->
                 <div class="expertise-card"
-                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 2.5rem; text-align: left; backdrop-filter: blur(10px);">
-                    <div class="btn-purple"
-                        style="width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.25rem; cursor: default; pointer-events: none;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                    <div
+                        style="flex-shrink: 0; width: 48px; height: 48px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                         </svg>
                     </div>
-                    <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 1rem;">Digital Workplace Solutions</h3>
-                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.6; font-size: 0.95rem;">Empower your teams
-                        with modern collaboration tools, remote work infrastructure, and seamless digital workflows.</p>
-                </div>
-                <!-- Card 5 -->
-                <div class="expertise-card"
-                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 2.5rem; text-align: left; backdrop-filter: blur(10px);">
-                    <div class="btn-purple"
-                        style="width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.25rem; cursor: default; pointer-events: none;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                        </svg>
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Monetization</h3>
+                        <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">learn how to
+                            monetize your server, and grow your revenues without being seen as pay to win</p>
                     </div>
-                    <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 1rem;">Digital Strategy</h3>
-                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.6; font-size: 0.95rem;">We develop
+                </div>
+                <!-- Card 7: Digital Workplace Solutions -->
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+            </div>
+            <div>
+                <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Digital Workplace Solutions
+                </h3>
+                <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">Empower your
+                    teams with modern collaboration tools, remote work infrastructure, and seamless digital
+                    workflows.</p>
+            </div>
+            </div>
+            <!-- Card 8: Events and Content Creators -->
+            <div class="expertise-card"
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                <div style="flex-shrink: 0; padding-top: 0.5rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Events and Content Creators
+                    </h3>
+                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">learn how to
+                        organise events in peak growth, to keep more players, and enablr to power of content
+                        creators without burning your budget</p>
+                </div>
+            </div>
+            <!-- Card 9: Digital Strategy -->
+            <div class="expertise-card"
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                <div style="flex-shrink: 0; padding-top: 0.5rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Digital Strategy</h3>
+                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">We develop
                         end-to-end strategies that align your business goals with the right solutions, for smooth
                         adoption and measurable results.</p>
                 </div>
-                <!-- Card 6 -->
-                <div class="expertise-card"
-                    style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 2.5rem; text-align: left; backdrop-filter: blur(10px);">
-                    <div class="btn-purple"
-                        style="width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.25rem; cursor: default; pointer-events: none;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 1rem;">IT Modernization</h3>
-                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.6; font-size: 0.95rem;">Upgrade legacy
-                        systems with confidence. Streamline outdated infrastructures into modern, efficient platforms.
-                    </p>
+            </div>
+            <!-- Card 10: Reddit marketing -->
+            <div class="expertise-card"
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                <div style="flex-shrink: 0; padding-top: 0.5rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M2.5 13a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm19 0a2 2 0 1 1 2-2 2 2 0 0 1-2 2zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                        </path>
+                    </svg>
                 </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">Reddit marketing</h3>
+                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">learn how to
+                        use reddit in order to grow more. reddit is a hidden gem for early server growth.</p>
+                </div>
+            </div>
+            <!-- Card 11: IT Modernization -->
+            <div class="expertise-card"
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                <div style="flex-shrink: 0; padding-top: 0.5rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">IT Modernization</h3>
+                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">Upgrade legacy
+                        systems with confidence. Streamline outdated infrastructures into modern, efficient
+                        platforms.</p>
+                </div>
+            </div>
+            <!-- Card 12: overall management -->
+            <div class="expertise-card"
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; backdrop-filter: blur(10px);">
+                <div style="flex-shrink: 0; padding-top: 0.5rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <polyline points="16 11 18 13 22 9"></polyline>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 0.6rem;">overall management</h3>
+                    <p style="color: rgba(255, 255, 255, 0.5); line-height: 1.5; font-size: 0.85rem;">It's not just
+                        about growth. Learn how to keep the momentum going and manage your project like a
+                        professional.</p>
+                </div>
+            </div>
             </div>
 
             <div style="text-align: center; margin-top: 6rem;">
