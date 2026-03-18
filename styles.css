@@ -47,51 +47,54 @@ body {
 
 .bg-glow-top {
     position: fixed;
-    top: -200px;
+    top: -150px;
     left: 50%;
-    transform: translateX(-50%);
-    width: 900px;
-    height: 600px;
-    background: radial-gradient(ellipse at center, rgba(6, 182, 212, 0.18) 0%, transparent 70%);
+    width: 1000px;
+    height: 700px;
+    background: radial-gradient(ellipse at center, rgba(34, 211, 238, 0.25) 0%, transparent 70%);
     z-index: 0;
     pointer-events: none;
-    animation: floatGlow 20s ease-in-out infinite;
+    filter: blur(80px);
+    animation: floatGlowCenter 15s ease-in-out infinite;
 }
 
 .bg-glow-bottom {
     position: fixed;
-    bottom: -200px;
-    left: 30%;
-    width: 700px;
-    height: 500px;
-    background: radial-gradient(ellipse at center, rgba(2, 132, 199, 0.14) 0%, transparent 70%);
+    bottom: -150px;
+    left: 20%;
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(2, 132, 199, 0.2) 0%, transparent 70%);
     z-index: 0;
     pointer-events: none;
-    animation: floatGlow 25s ease-in-out infinite reverse;
+    filter: blur(80px);
+    animation: floatGlow 18s ease-in-out infinite reverse;
 }
 
 .bg-glow-left {
     position: fixed;
-    top: 20%;
-    left: -200px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
+    top: 10%;
+    left: -150px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.15) 0%, transparent 70%);
     z-index: 0;
     pointer-events: none;
-    animation: floatGlow 18s ease-in-out infinite 2s;
+    filter: blur(80px);
+    animation: floatGlow 12s ease-in-out infinite 1s;
 }
 
 .bg-glow-right {
     position: fixed;
-    bottom: 20%;
-    right: -200px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle at center, rgba(8, 145, 178, 0.12) 0%, transparent 70%);
+    bottom: 10%;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at center, rgba(6, 182, 212, 0.18) 0%, transparent 70%);
     z-index: 0;
     pointer-events: none;
-    animation: floatGlow 22s ease-in-out infinite 1s;
+    filter: blur(80px);
+    animation: floatGlow 14s ease-in-out infinite 0.5s;
 }
 
 @keyframes floatGlow {
@@ -99,16 +102,35 @@ body {
     0%,
     100% {
         transform: translate(0, 0) scale(1);
-        opacity: 0.8;
+        opacity: 0.7;
     }
 
     33% {
-        transform: translate(100px, 50px) scale(1.1);
+        transform: translate(150px, 80px) scale(1.2);
         opacity: 1;
     }
 
     66% {
-        transform: translate(-50px, 150px) scale(0.9);
+        transform: translate(-80px, 200px) scale(0.8);
+        opacity: 0.6;
+    }
+}
+
+@keyframes floatGlowCenter {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0) scale(1);
+        opacity: 0.8;
+    }
+
+    33% {
+        transform: translate(-40%, 50px) scale(1.1);
+        opacity: 1;
+    }
+
+    66% {
+        transform: translate(-60%, 100px) scale(0.9);
         opacity: 0.7;
     }
 }
