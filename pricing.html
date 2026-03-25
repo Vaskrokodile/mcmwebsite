@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Minecom - The future of UGC marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pricing-hero {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .coming-soon-badge {
+            padding: 0.6rem 1.5rem;
+            background: linear-gradient(90deg, #f0fdff 0%, #22d3ee 100%);
+            border: none;
+            border-radius: 9999px;
+            color: #0c4a6e;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            box-shadow:
+                inset 0 2px 4px rgba(255, 255, 255, 0.9),
+                inset 0 -2px 4px rgba(0, 0, 0, 0.1),
+                0 10px 25px rgba(34, 211, 238, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: default;
+        }
+
+        .pricing-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: clamp(3.5rem, 10vw, 7rem);
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .pricing-subtext {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .pricing-cta {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ═══ BACKGROUND ═══ -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow-top" aria-hidden="true"></div>
+    <div class="bg-glow-bottom" aria-hidden="true"></div>
+
+    <!-- ═══ NAVBAR ═══ -->
+    <header class="navbar">
+        <div class="navbar-inner">
+
+            <nav class="nav-links">
+                <a href="/">Homepage</a>
+                <a href="/pricing" class="active">Pricing</a>
+                <a href="/portfolio">Case Studies</a>
+                <a href="/mineconsulting">Mineconsulting</a>
+                <a href="https://discord.gg/minecom" target="_blank">Contact Us</a>
+            </nav>
+
+            <div class="nav-ctas">
+                <a href="#" class="btn-ghost">Sign up</a>
+                <a href="https://discord.gg/minecom" class="btn-purple">Talk to Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pricing-hero">
+        <div class="coming-soon-badge">Coming Soon</div>
+        <h1 class="pricing-title">Transparent Pricing <br> <span class="blue-shine">Simplified.</span></h1>
+        <p class="pricing-subtext">
+            We're putting the final touches on our pricing plans to ensure you get the best value for your growth
+            journey.
+        </p>
+        <div class="pricing-cta">
+            <a href="https://discord.gg/minecom" target="_blank" class="btn-teal">Join our Discord</a>
+            <a href="/" class="btn-dark-outline">Back to Home</a>
+        </div>
+    </main>
+
+</body>
+
+</html>
