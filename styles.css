@@ -19,11 +19,14 @@
     --bg-dark: #000000;
 }
 
-html,
+html {
+    background: #000;
+}
+
 body {
-    height: 100%;
+    min-height: 100vh;
     font-family: 'Inter', system-ui, sans-serif;
-    background: #050e1a;
+    background: transparent;
     color: var(--text);
     overflow-x: hidden;
 }
@@ -37,7 +40,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: -1; /* Bottom-most layer */
     pointer-events: none;
     overflow: hidden;
 }
