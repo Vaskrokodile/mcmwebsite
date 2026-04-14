@@ -19,10 +19,9 @@
         }
 
         .consulting-body {
-            background-color: var(--consulting-bg);
-            background-image: var(--consulting-glow);
-            background-attachment: fixed;
+            background-color: transparent;
             min-height: 100vh;
+            color: #fff;
         }
 
         .consulting-navbar {
@@ -109,8 +108,10 @@
         }
 
         .consulting-hero h1 {
+            font-family: 'Outfit', sans-serif;
             font-size: clamp(2.5rem, 5vw, 4.5rem);
-            font-weight: 500;
+            font-weight: 800;
+            letter-spacing: -0.04em;
             line-height: 1.1;
             margin-bottom: 2rem;
             color: #fff;
@@ -199,6 +200,14 @@
 
 <body class="consulting-body">
 
+    <!-- ═══ BACKGROUND ═══ -->
+    <div class="bg-video-container" aria-hidden="true">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="consulting.mp4" type="video/mp4">
+        </video>
+        <div class="bg-overlay-shade" style="background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);"></div>
+    </div>
+
     <!-- ═══ NAVBAR ═══ -->
     <header class="navbar">
         <div class="navbar-inner">
@@ -219,7 +228,7 @@
     </header>
 
     <!-- ═══ HERO ═══ -->
-    <main class="consulting-hero">
+    <main class="hero consulting-hero" style="padding: 24vh 2rem 0;">
         <h1>Learn how to grow your <br> server <em class="headline-italic"
                 style="font-size: clamp(2.5rem, 5vw, 4.5rem);">for free.</em></h1>
 
@@ -227,7 +236,7 @@
 
         <div class="consulting-hero-ctas"
             style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-            <a href="https://discord.gg/minecom" class="btn-purple">Enroll Now</a>
+            <a href="https://discord.gg/minecom" class="btn-purple btn-rect">Enroll Now</a>
             <div
                 style="display: flex; align-items: center; gap: 0.8rem; color: #fff; font-weight: 500; font-size: 0.95rem; opacity: 0.9;">
                 <span style="font-size: 1.2rem;">&rarr;</span>

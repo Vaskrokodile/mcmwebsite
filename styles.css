@@ -10,16 +10,13 @@
 }
 
 :root {
-    --purple: #0891b2;
-    --purple-mid: #06b6d4;
-    --purple-light: #22d3ee;
-    --purple-pale: #67e8f9;
-    --bg: #04111a;
-    --bg-card: #021420;
+    --purple: #a855f7;
+    --indigo: #6366f1;
+    --topaz: #00d2ff;
     --text: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.55);
     --border: rgba(255, 255, 255, 0.07);
-    --grid-color: rgba(6, 182, 212, 0.10);
+    --bg-dark: #000000;
 }
 
 html,
@@ -32,129 +29,80 @@ body {
 }
 
 /* ─────────────────────────────────────────────
-   BACKGROUND GRID + GLOWS
+   VIDEO BACKGROUND
 ───────────────────────────────────────────── */
-.bg-grid {
+.bg-video-container {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-overlay-shade {
+    position: absolute;
     inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background-image:
-        linear-gradient(var(--grid-color) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-    background-size: 64px 64px;
+    /* Clean dark overlay for text readability */
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.85) 100%);
+    z-index: 1;
 }
 
-.bg-glow-top {
-    position: fixed;
-    top: -200px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 900px;
-    height: 600px;
-    background: radial-gradient(ellipse at center, rgba(6, 182, 212, 0.18) 0%, transparent 70%);
-    z-index: 0;
-    pointer-events: none;
-    animation: floatGlow 20s ease-in-out infinite;
-}
-
-.bg-glow-bottom {
-    position: fixed;
-    bottom: -200px;
-    left: 30%;
-    width: 700px;
-    height: 500px;
-    background: radial-gradient(ellipse at center, rgba(2, 132, 199, 0.14) 0%, transparent 70%);
-    z-index: 0;
-    pointer-events: none;
-    animation: floatGlow 25s ease-in-out infinite reverse;
-}
-
-.bg-glow-left {
-    position: fixed;
-    top: 20%;
-    left: -200px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
-    z-index: 0;
-    pointer-events: none;
-    animation: floatGlow 18s ease-in-out infinite 2s;
-}
-
-.bg-glow-right {
-    position: fixed;
-    bottom: 20%;
-    right: -200px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle at center, rgba(8, 145, 178, 0.12) 0%, transparent 70%);
-    z-index: 0;
-    pointer-events: none;
-    animation: floatGlow 22s ease-in-out infinite 1s;
-}
-
-@keyframes floatGlow {
-
-    0%,
-    100% {
-        transform: translate(0, 0) scale(1);
-        opacity: 0.8;
-    }
-
-    33% {
-        transform: translate(100px, 50px) scale(1.1);
-        opacity: 1;
-    }
-
-    66% {
-        transform: translate(-50px, 150px) scale(0.9);
-        opacity: 0.7;
-    }
-}
 
 /* ─────────────────────────────────────────────
    NAVBAR
 ───────────────────────────────────────────── */
 .navbar {
-    position: relative;
-    z-index: 100;
-    border-bottom: 1px solid var(--border);
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    max-width: 1100px;
+    z-index: 1000;
+    
+    background: rgba(8, 8, 8, 0.45);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .navbar-inner {
-    max-width: 1280px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 2.5rem;
-    padding: 0.85rem 2rem;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
 }
 
-/* Logo */
-.logo {
+.brand-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
     text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: #fff;
     flex-shrink: 0;
 }
 
-.logo-icon {
-    width: 34px;
-    height: 34px;
-    background: rgba(6, 182, 212, 0.12);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-text {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    color: #fff;
+.brand-logo span {
+    color: var(--topaz);
+    opacity: 0.9;
 }
 
 /* Nav links */
@@ -167,9 +115,10 @@ body {
 }
 
 .nav-links a {
+    font-family: 'Outfit', sans-serif;
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: color 0.2s;
     white-space: nowrap;
@@ -249,6 +198,10 @@ body {
         0 15px 35px rgba(34, 211, 238, 0.45);
 }
 
+.btn-rect {
+    border-radius: 8px !important;
+}
+
 
 
 .btn-lg {
@@ -295,49 +248,25 @@ body {
     z-index: 10;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 4.5rem 2rem 0;
+    padding: 24vh 2rem 0; /* Lowered from 12vh to 'center more' */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
-    min-height: calc(100vh - 65px);
-}
-
-/* Badge */
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid rgba(168, 85, 247, 0.4);
-    background: rgba(6, 182, 212, 0.12);
-    border-radius: 100px;
-    padding: 0.5rem 1.2rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 2.2rem;
-    backdrop-filter: blur(8px);
-}
-
-.badge-icon {
-    width: 28px;
-    height: 28px;
-    background: linear-gradient(135deg, #22d3ee, #0891b2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
+    min-height: calc(100vh - 80px);
 }
 
 /* Headline */
 .hero-headline {
-    font-size: clamp(52px, 7.5vw, 100px);
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(48px, 6vw, 84px);
     font-weight: 800;
     letter-spacing: -0.04em;
-    line-height: 1.05;
-    max-width: 1000px;
-    margin-bottom: 1.4rem;
+    line-height: 1.1;
+    max-width: 1100px;
+    margin-bottom: 2rem;
+    color: #fff;
 }
 
 /* Cyan italic line — Cormorant Garamond */
